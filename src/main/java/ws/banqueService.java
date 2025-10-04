@@ -10,9 +10,9 @@ import java.util.List;
 
 @WebService(serviceName = "BanqueWS")
 public class BanqueService {
-    @WebMethod(operationName = "ConvertionEuroToDH")
+    @WebMethod(operationName = "ConversionEuroToDH")
     public double conversion(@WebParam(name = "montant") double mt) {
-        return mt;
+        return mt*11;
     }
 
     @WebMethod

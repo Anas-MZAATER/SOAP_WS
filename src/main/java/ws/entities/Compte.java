@@ -3,21 +3,21 @@ package ws.entities;
 import java.util.Date;
 
 public class Compte {
-    private int id;
+    private int code;
     private double solde;
     private Date dateCreation;
 
     public Compte() {
     }
 
-    public Compte(int id, double solde, Date dateCreation) {
-        this.id = id;
+    public Compte(int code, double solde, Date dateCreation) {
+        this.code = code;
         this.solde = solde;
         this.dateCreation = dateCreation;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCode(int code) {
+        this.code = code;
     }
 
     public void setSolde(double solde) {
@@ -28,8 +28,8 @@ public class Compte {
         this.dateCreation = dateCreation;
     }
 
-    public int getId() {
-        return id;
+    public int getCode() {
+        return code;
     }
 
     public double getSolde() {
